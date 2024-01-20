@@ -1,0 +1,32 @@
+{
+  "name": "GooglesheetDB",
+  "description": "googlesheet db",
+  "repository": "https://github.com/NOOB-EXOTIC21/googlesheetDBpro/tree/main.git",
+  "keywords": ["node", "express"],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "SPREADSHEET_ID": {
+      "description": "Google Sheets Spreadsheet ID",
+      "required": true
+    },
+  
+    "HEROKU_APP_NAME": {
+      "description": "Heroku app name",
+      "required": true
+    },
+    "API_KEY": {
+      "description": "Google Sheets from console API Key",
+      "required": true
+    }
+  }
+}
